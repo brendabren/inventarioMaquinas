@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorSurface"
+        android:elevation="2dp"
+        app:title="@string/title_add_machine" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:labelFor="@id/spinnerTipo"
+                android:text="@string/label_type" />
+
+            <Spinner
+                android:id="@+id/spinnerTipo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:labelFor="@id/spinnerMarca"
+                android:text="@string/label_brand" />
+
+            <Spinner
+                android:id="@+id/spinnerMarca"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editDescricao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:gravity="top"
+                android:hint="@string/label_description"
+                android:inputType="textCapSentences|textMultiLine"
+                android:minHeight="80dp" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editAnoFabricacao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_year"
+                android:inputType="number"
+                android:maxLength="4"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editValor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_value"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editNomeProprietario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_owner_name"
+                android:inputType="textCapWords"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editContatoProprietario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_owner_contact"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+                android:id="@+id/editPercentualComissao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:hint="@string/label_commission"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:labelFor="@id/spinnerStatus"
+                android:text="@string/label_status" />
+
+            <Spinner
+                android:id="@+id/spinnerStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:spinnerMode="dropdown" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/label_inclusion_date" />
+
+            <TextView
+                android:id="@+id/textDataInclusao"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:minHeight="32dp"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

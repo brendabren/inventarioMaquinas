@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Machinery Inventory</string>
+
+    <string name="title_types">Machine types</string>
+    <string name="title_brands">Brands</string>
+    <string name="title_machines">Machines</string>
+
+    <string name="action_add">Add</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_back">Back</string>
+    <string name="action_filter">Filter</string>
+    <string name="action_clear_filters">Clear filters</string>
+    <string name="action_download">Download server data</string>
+    <string name="action_sync">Sync offline changes</string>
+
+    <string name="label_description">Description</string>
+    <string name="label_name">Name</string>
+    <string name="label_type">Type</string>
+    <string name="label_brand">Brand</string>
+    <string name="label_inclusion_date">Date added</string>
+    <string name="label_year">Manufacturing year</string>
+    <string name="label_value">Price (BRL)</string>
+    <string name="label_owner_name">Owner name</string>
+    <string name="label_owner_contact">Owner contact</string>
+    <string name="label_commission">Commission (%)</string>
+    <string name="label_status">Status</string>
+    <string name="label_min_value">Minimum price (BRL)</string>
+    <string name="label_max_value">Maximum price (BRL)</string>
+
+    <string name="status_available">Available</string>
+    <string name="status_negotiating">Under negotiation</string>
+    <string name="status_reserved">Reserved</string>
+    <string name="status_sold">Sold</string>
+    <string name="option_all">All</string>
+    <string name="option_select">Select</string>
+
+    <string name="title_add_type">Add type</string>
+    <string name="title_edit_type">Edit type</string>
+    <string name="title_add_brand">Add brand</string>
+    <string name="title_edit_brand">Edit brand</string>
+    <string name="title_add_machine">Add machine</string>
+    <string name="title_edit_machine">Edit machine</string>
+
+    <string name="empty_types">No types registered.</string>
+    <string name="empty_brands">No brands registered.</string>
+    <string name="empty_machines">No machines found.</string>
+    <string name="record_local_id">Local ID: %1$d</string>
+
+    <string name="dialog_delete_title">Confirm deletion</string>
+    <string name="dialog_delete_message">Delete “%1$s”?</string>
+
+    <string name="message_operation_success">Operation completed.</string>
+    <string name="message_saving">Saving…</string>
+
+    <string name="error_empty_description">Enter a description.</string>
+    <string name="error_empty_name">Enter a name.</string>
+    <string name="error_not_found">Record not found or already deleted.</string>
+    <string name="error_linked_machines">Cannot delete: there are linked machines.</string>
+    <string name="error_pending_machine_deletions">Sync the deletions of linked machines before deleting this record.</string>
+    <string name="error_database">Could not complete the local database operation.</string>
+    <string name="error_invalid_type">Select a valid type.</string>
+    <string name="error_invalid_brand">Select a valid brand.</string>
+    <string name="error_invalid_year">Enter a valid manufacturing year.</string>
+    <string name="error_invalid_value">Enter a valid price greater than or equal to zero.</string>
+    <string name="error_empty_owner_name">Enter the owner name.</string>
+    <string name="error_empty_owner_contact">Enter the owner contact.</string>
+    <string name="error_invalid_commission">Enter a commission between 0 and 100%.</string>
+    <string name="error_invalid_status">Select a valid status.</string>
+    <string name="error_invalid_value_range">The minimum price cannot exceed the maximum price.</string>
+    <string name="machine_type_brand">%1$s • %2$s</string>
+    <string name="machine_year">Year: %1$d</string>
+    <string name="machine_status">Status: %1$s</string>
+    <string name="unknown_type">Type not found</string>
+    <string name="unknown_brand">Brand not found</string>
+    <string name="unknown_status">Unknown status</string>
+    <string name="date_generated_on_save">Set automatically when saved.</string>
+
+    <string name="action_test_api">Test API</string>
+    <string name="api_test_title">API connection test</string>
+    <string name="api_test_run">Run queries</string>
+    <string name="api_test_running">Querying the server…</string>
+    <string name="api_test_ready">This screen can query data and create a test type on the server. Creating a type changes the server.</string>
+    <string name="api_test_success">%1$s: HTTP %2$d — %3$d record(s).</string>
+    <string name="api_test_http_error">%1$s: HTTP error %2$d.</string>
+    <string name="api_test_empty_body">%1$s: HTTP %2$d, but no list in the response body.</string>
+    <string name="api_test_failure">%1$s: %2$s — %3$s</string>
+    <string name="api_test_unknown_error">No additional details.</string>
+
+    <string name="action_download_data">Fetch server data</string>
+    <string name="download_channel_name">Data transfer</string>
+    <string name="download_notification_title">Fetching server data</string>
+    <string name="download_notification_message">Please wait while data is downloaded and imported.</string>
+    <string name="download_success">Data received and imported successfully.</string>
+    <string name="download_error">Could not import data: %1$s</string>
+    <string name="download_start_error">Could not start fetching data.</string>
+
+    <string name="api_test_post">Test type creation</string>
+    <string name="api_test_post_title">Create a type on the server?</string>
+    <string name="api_test_post_confirmation">This test will create a real server record with this description:\n\n%1$s\n\nNo local records will be uploaded.</string>
+    <string name="api_test_post_confirm">Create test type</string>
+    <string name="api_test_post_wait">Sending test creation request…</string>
+    <string name="api_test_post_result">POST tipo: HTTP %1$d\nSubmitted description: %2$s\nResponse:\n%3$s</string>
+    <string name="api_test_post_failed">Creation could not be confirmed.\nSubmitted description: %1$s\nDetails: %2$s\n\nDo not retry automatically: check the server first.</string>
+    <string name="api_test_post_locked">A previous attempt is already recorded for this test. Check its result below before creating anything else.</string>
+    <string name="api_test_no_body">(no response body)</string>
+
+    <string name="action_sync_type_updates">Upload type changes</string>
+    <string name="transfer_notification_title">Transferring data</string>
+    <string name="transfer_notification_message">Please wait while data is processed.</string>
+    <string name="sync_type_updates_success">Types confirmed as synchronized: %1$d.</string>
+    <string name="sync_type_updates_error">Could not finish uploading type changes: %1$s</string>
+
+    <string name="action_sync_type_deletions">Upload type deletions</string>
+    <string name="sync_type_deletions_success">Type deletions completed: %1$d.</string>
+    <string name="sync_type_deletions_error">Could not finish type deletions: %1$s</string>
+
+    <string name="action_sync_brand_updates">Upload brand changes</string>
+    <string name="sync_brand_updates_success">Brands confirmed as synchronized: %1$d.</string>
+    <string name="sync_brand_updates_error">Could not finish uploading brand changes: %1$s</string>
+    <string name="sync_catalogs_error">Synchronization was interrupted: %1$s</string>
+
+    <string name="action_reconcile">Resolve new types and brands</string>
+    <string name="reconcile_title">Link record to server</string>
+    <string name="reconcile_query">Find candidates</string>
+    <string name="reconcile_create">Create on server</string>
+    <string name="reconcile_link">Link selected ID</string>
+    <string name="reconcile_working">Processing…</string>
+    <string name="reconcile_empty">There are no new local types or brands to link.</string>
+    <string name="reconcile_item">%1$s — Local ID %2$d\n%3$s</string>
+    <string name="reconcile_type">Type</string>
+    <string name="reconcile_brand">Brand</string>
+    <string name="reconcile_ready">Find candidates before creating. Confirm a link only if you recognize the correct remote record.</string>
+    <string name="reconcile_attempted">A creation attempt was already recorded. Find candidates; another POST will not be sent for this record.</string>
+    <string name="reconcile_candidates">Candidates found: %1$d. Carefully select the correct record.</string>
+    <string name="reconcile_create_question">Create this record on the server?\n\n%1$s\n\nThe attempt will be recorded to prevent automatic resubmission.</string>
+    <string name="reconcile_link_question">Link this local record to the following remote record?\n\n%1$s\n\nConfirm only if this is the correct record.</string>
+    <string name="reconcile_error">Could not complete the operation: %1$s</string>
+    <string name="action_reconcile_machines">Upload new machines</string>
+    <string name="reconcile_machine">Machine</string>
+    <string name="reconcile_machines_empty">There are no new local machines to link.</string>
+    <string name="action_sync_catalogs">Sync creations, changes and deletions</string>
+    <string name="sync_catalogs_success">Updates confirmed: %1$d. Deletions completed: %2$d.</string>
+    <string name="sync_all_success">Creations linked: %1$d. Writes confirmed (includes new): %2$d. Deletions: %3$d.</string>
+    <string name="creation_needs_review">Creation pending: %1$s. Find candidates in Resolve new types and brands or Upload new machines. Do not repeat creation or clear application data.</string>
+    <string name="creation_journal_error">Could not persist the creation journal. Operation stopped.</string>
+    <string name="download_new_pending">New local records are not linked yet. Sync or resolve their creation before fetching server data. No data was imported.</string>
+</resources>

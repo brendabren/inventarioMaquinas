@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Inventário de Máquinas</string>
+
+    <string name="title_types">Tipos de máquinas</string>
+    <string name="title_brands">Marcas</string>
+    <string name="title_machines">Máquinas</string>
+
+    <string name="action_add">Adicionar</string>
+    <string name="action_edit">Editar</string>
+    <string name="action_delete">Excluir</string>
+    <string name="action_save">Salvar</string>
+    <string name="action_cancel">Cancelar</string>
+    <string name="action_back">Voltar</string>
+    <string name="action_filter">Filtrar</string>
+    <string name="action_clear_filters">Limpar filtros</string>
+    <string name="action_download">Buscar dados do servidor</string>
+    <string name="action_sync">Sincronizar dados offline</string>
+
+    <string name="label_description">Descrição</string>
+    <string name="label_name">Nome</string>
+    <string name="label_type">Tipo</string>
+    <string name="label_brand">Marca</string>
+    <string name="label_inclusion_date">Data de inclusão</string>
+    <string name="label_year">Ano de fabricação</string>
+    <string name="label_value">Valor (R$)</string>
+    <string name="label_owner_name">Nome do proprietário</string>
+    <string name="label_owner_contact">Contato do proprietário</string>
+    <string name="label_commission">Comissão (%)</string>
+    <string name="label_status">Status</string>
+    <string name="label_min_value">Valor mínimo (R$)</string>
+    <string name="label_max_value">Valor máximo (R$)</string>
+
+    <string name="status_available">Disponível</string>
+    <string name="status_negotiating">Em negociação</string>
+    <string name="status_reserved">Reservada</string>
+    <string name="status_sold">Vendida</string>
+    <string name="option_all">Todos</string>
+    <string name="option_select">Selecione</string>
+
+    <string name="title_add_type">Adicionar tipo</string>
+    <string name="title_edit_type">Editar tipo</string>
+    <string name="title_add_brand">Adicionar marca</string>
+    <string name="title_edit_brand">Editar marca</string>
+    <string name="title_add_machine">Adicionar máquina</string>
+    <string name="title_edit_machine">Editar máquina</string>
+
+    <string name="empty_types">Nenhum tipo cadastrado.</string>
+    <string name="empty_brands">Nenhuma marca cadastrada.</string>
+    <string name="empty_machines">Nenhuma máquina encontrada.</string>
+    <string name="record_local_id">Código local: %1$d</string>
+
+    <string name="dialog_delete_title">Confirmar exclusão</string>
+    <string name="dialog_delete_message">Deseja excluir “%1$s”?</string>
+
+    <string name="message_operation_success">Operação concluída.</string>
+    <string name="message_saving">Salvando…</string>
+
+    <string name="error_empty_description">Informe a descrição.</string>
+    <string name="error_empty_name">Informe o nome.</string>
+    <string name="error_not_found">Registro não encontrado ou já excluído.</string>
+    <string name="error_linked_machines">Não é possível excluir: existem máquinas vinculadas.</string>
+    <string name="error_pending_machine_deletions">Sincronize as exclusões das máquinas vinculadas antes de excluir este registro.</string>
+    <string name="error_database">Não foi possível concluir a operação no banco local.</string>
+    <string name="error_invalid_type">Selecione um tipo válido.</string>
+    <string name="error_invalid_brand">Selecione uma marca válida.</string>
+    <string name="error_invalid_year">Informe um ano de fabricação válido.</string>
+    <string name="error_invalid_value">Informe um valor válido, maior ou igual a zero.</string>
+    <string name="error_empty_owner_name">Informe o nome do proprietário.</string>
+    <string name="error_empty_owner_contact">Informe o contato do proprietário.</string>
+    <string name="error_invalid_commission">Informe uma comissão entre 0 e 100%.</string>
+    <string name="error_invalid_status">Selecione um status válido.</string>
+    <string name="error_invalid_value_range">O valor mínimo não pode ser maior que o máximo.</string>
+
+    <string name="machine_type_brand">%1$s • %2$s</string>
+    <string name="machine_year">Ano: %1$d</string>
+    <string name="machine_status">Status: %1$s</string>
+    <string name="unknown_type">Tipo não encontrado</string>
+    <string name="unknown_brand">Marca não encontrada</string>
+    <string name="unknown_status">Status desconhecido</string>
+    <string name="date_generated_on_save">Definida automaticamente ao salvar.</string>
+
+    <string name="action_test_api">Testar API</string>
+    <string name="api_test_title">Teste de conexão com a API</string>
+    <string name="api_test_run">Executar consultas</string>
+    <string name="api_test_running">Consultando o servidor…</string>
+    <string name="api_test_ready">Esta tela permite consultar dados e criar um tipo de teste no servidor. A criação altera o servidor.</string>
+    <string name="api_test_success">%1$s: HTTP %2$d — %3$d registro(s).</string>
+    <string name="api_test_http_error">%1$s: erro HTTP %2$d.</string>
+    <string name="api_test_empty_body">%1$s: HTTP %2$d, mas sem uma lista no corpo da resposta.</string>
+    <string name="api_test_failure">%1$s: %2$s — %3$s</string>
+    <string name="api_test_unknown_error">Sem detalhes adicionais.</string>
+
+    <string name="action_download_data">Buscar dados do servidor</string>
+    <string name="download_channel_name">Transferência de dados</string>
+    <string name="download_notification_title">Buscando dados do servidor</string>
+    <string name="download_notification_message">Aguarde enquanto os dados são baixados e importados.</string>
+    <string name="download_success">Dados recebidos e importados com sucesso.</string>
+    <string name="download_error">Não foi possível importar os dados: %1$s</string>
+    <string name="download_start_error">Não foi possível iniciar a busca de dados.</string>
+
+    <string name="api_test_post">Testar inclusão de tipo</string>
+    <string name="api_test_post_title">Criar tipo no servidor?</string>
+    <string name="api_test_post_confirmation">Este teste criará um registro real no servidor com a descrição:\n\n%1$s\n\nNenhum cadastro local será enviado.</string>
+    <string name="api_test_post_confirm">Criar tipo de teste</string>
+    <string name="api_test_post_wait">Enviando inclusão de teste…</string>
+    <string name="api_test_post_result">POST tipo: HTTP %1$d\nDescrição enviada: %2$s\nResposta:\n%3$s</string>
+    <string name="api_test_post_failed">A inclusão não pôde ser confirmada.\nDescrição enviada: %1$s\nDetalhes: %2$s\n\nNão repita automaticamente: confira o servidor primeiro.</string>
+    <string name="api_test_post_locked">Já existe uma tentativa registrada neste teste. Confira o resultado abaixo antes de qualquer nova inclusão.</string>
+    <string name="api_test_no_body">(sem corpo de resposta)</string>
+
+    <string name="action_sync_type_updates">Enviar alterações de tipos</string>
+    <string name="transfer_notification_title">Transferindo dados</string>
+    <string name="transfer_notification_message">Aguarde enquanto os dados são processados.</string>
+    <string name="sync_type_updates_success">Tipos confirmados como sincronizados: %1$d.</string>
+    <string name="sync_type_updates_error">Não foi possível concluir o envio dos tipos: %1$s</string>
+
+    <string name="action_sync_type_deletions">Enviar exclusões de tipos</string>
+    <string name="sync_type_deletions_success">Exclusões de tipos concluídas: %1$d.</string>
+    <string name="sync_type_deletions_error">Não foi possível concluir as exclusões de tipos: %1$s</string>
+
+    <string name="action_sync_brand_updates">Enviar alterações de marcas</string>
+    <string name="sync_brand_updates_success">Marcas confirmadas como sincronizadas: %1$d.</string>
+    <string name="sync_brand_updates_error">Não foi possível concluir o envio das marcas: %1$s</string>
+    <string name="sync_catalogs_error">A sincronização foi interrompida: %1$s</string>
+
+    <string name="action_reconcile">Resolver inclusões de tipos e marcas</string>
+    <string name="reconcile_title">Associar cadastro ao servidor</string>
+    <string name="reconcile_query">Consultar candidatos</string>
+    <string name="reconcile_create">Criar no servidor</string>
+    <string name="reconcile_link">Associar ID selecionado</string>
+    <string name="reconcile_working">Processando…</string>
+    <string name="reconcile_empty">Não há tipos ou marcas locais novos para associar.</string>
+    <string name="reconcile_item">%1$s — ID local %2$d\n%3$s</string>
+    <string name="reconcile_type">Tipo</string>
+    <string name="reconcile_brand">Marca</string>
+    <string name="reconcile_ready">Consulte os candidatos antes de criar. Confirme a associação somente se reconhecer o registro remoto correto.</string>
+    <string name="reconcile_attempted">Já houve uma tentativa de inclusão. Consulte os candidatos; não será enviado outro POST para este cadastro.</string>
+    <string name="reconcile_candidates">Candidatos encontrados: %1$d. Selecione cuidadosamente o registro correto.</string>
+    <string name="reconcile_create_question">Criar no servidor o cadastro abaixo?\n\n%1$s\n\nA tentativa será registrada para impedir o reenvio automático.</string>
+    <string name="reconcile_link_question">Associar este cadastro local ao registro remoto abaixo?\n\n%1$s\n\nSó confirme se for o registro correto.</string>
+    <string name="reconcile_error">Não foi possível concluir: %1$s</string>
+    <string name="action_reconcile_machines">Enviar máquinas novas</string>
+    <string name="reconcile_machine">Máquina</string>
+    <string name="reconcile_machines_empty">Não há máquinas locais novas para associar.</string>
+    <string name="action_sync_catalogs">Sincronizar inclusões, alterações e exclusões</string>
+    <string name="sync_catalogs_success">Atualizações confirmadas: %1$d. Exclusões concluídas: %2$d.</string>
+
+    <string name="sync_all_success">Inclusões associadas: %1$d. Gravações confirmadas (inclui novas): %2$d. Exclusões: %3$d.</string>
+    <string name="creation_needs_review">Inclusão pendente: %1$s. Consulte os candidatos em Resolver inclusões ou Enviar máquinas novas. Não repita a criação nem apague os dados do aplicativo.</string>
+    <string name="creation_journal_error">Não foi possível gravar o controle de inclusão. A operação foi interrompida.</string>
+    <string name="download_new_pending">Há cadastros locais novos sem associação. Sincronize ou resolva as inclusões antes de buscar dados do servidor. Nenhum dado foi importado.</string>
+</resources>

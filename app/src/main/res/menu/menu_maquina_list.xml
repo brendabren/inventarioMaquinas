@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_add"
+        android:title="@string/action_add"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_filter"
+        android:title="@string/action_filter"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_clear_filters"
+        android:title="@string/action_clear_filters"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_download_data"
+        android:title="@string/action_download_data"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_sync_catalogs"
+        android:title="@string/action_sync_catalogs"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reconcile"
+        android:title="@string/action_reconcile"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_reconcile_machines"
+        android:title="@string/action_reconcile_machines"
+        app:showAsAction="never" />
+
+</menu>

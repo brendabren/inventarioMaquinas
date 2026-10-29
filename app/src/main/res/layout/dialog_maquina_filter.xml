@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:labelFor="@id/spinnerTipo"
+            android:text="@string/label_type" />
+
+        <Spinner
+            android:id="@+id/spinnerTipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/spinnerMarca"
+            android:text="@string/label_brand" />
+
+        <Spinner
+            android:id="@+id/spinnerMarca"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown" />
+
+        <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+            android:id="@+id/editValorDe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/label_min_value"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <EditText
+                android:background="@drawable/bg_input"
+                android:paddingStart="14dp"
+                android:paddingEnd="14dp"
+            android:id="@+id/editValorAte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:hint="@string/label_max_value"
+            android:inputType="numberDecimal"
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:labelFor="@id/spinnerStatus"
+            android:text="@string/label_status" />
+
+        <Spinner
+            android:id="@+id/spinnerStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:spinnerMode="dropdown" />
+
+    </LinearLayout>
+
+</ScrollView>
